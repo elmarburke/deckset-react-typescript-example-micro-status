@@ -1,6 +1,6 @@
-import * as React from "react";
-import "./App.css";
-import Status from "./components/Status";
+import * as React from 'react';
+import './App.css';
+import Status from './components/Status';
 
 class App extends React.Component {
   public render() {
@@ -8,7 +8,8 @@ class App extends React.Component {
       <div className="App">
         <h1>Hallo Berlin</h1>
         <hr />
-        <Status />
+        <Status status="React ist toll" userName="ElmarBurke" />
+        <Status status="Das ist eigentlich ganz einfach" userName="HCO" />
       </div>
     );
   }
