@@ -1,9 +1,14 @@
-import * as React from "react";
+import * as React from 'react';
 
-const Status = () => (
+interface IProps {
+  status: string;
+  userName: string;
+}
+
+const Status = ({ status, userName }: IProps) => (
   <article>
-    <p>React ist toll</p>
-    <footer>@ElmarBurke</footer>
+    <p>{status}</p>
+    <footer>@{userName}</footer>
   </article>
 );
 
